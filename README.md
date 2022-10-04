@@ -1,2 +1,2 @@
-# Caja-de-Meeseeks-
+# Caja-de-Meeseeks
 Proyecto de rick y morty
