@@ -1,0 +1,149 @@
+@font-face {
+  font-family: Schwifty Font;
+  src: url(/fonts/get_schwifty.ttf);
+  font-display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/Inicio_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Schwifty Font ;
+}
+
+/*Navegador etc-----------------------------------------------------------------------------------------------------------------*/
+
+header {
+    display: flex;
+    height: 13vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+ul {
+    list-style-type:none;
+    display: flex;
+}
+
+li {
+    float: left;
+     padding-right: 9rem;
+}
+  
+li a {
+    display: block;
+    color:rgb(0, 89, 255);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    -webkit-text-stroke: 0.01px rgb(0, 255, 12);  
+}
+
+li a:hover{
+    font-size: 2.5rem;
+    text-shadow: 0 0 7px rgb(0, 255, 12);
+    color:blue; 
+}
+
+h1{
+    font-size: 4.3rem;
+    color:rgb(0, 89, 255);
+   
+    -webkit-text-stroke: 0.01px rgb(0, 255, 12);
+    text-shadow: 0 0 9px rgb(0, 255, 12);
+}
+
+.icon {
+    width: 7rem;
+    
+}
+
+/*Caja de contenido-----------------------------------------------------------------------------------------------------------------*/
+
+.conten{
+    display:flex;
+}
+
+/*Izquierda-----------------------------------------------------------------------------------------------------------------*/
+
+.left {
+    height: 100%;
+    width: 30%;
+    display: inline-flexbox;
+}
+
+.news{
+    width: 75%;
+    height: 16rem;
+    border: 4px rgb(0, 255, 12) solid;
+    border-radius: 16%;
+    display:inline-block;
+    margin: 1rem;
+    margin-bottom: 0rem;
+    margin-left: 5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.news:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 12px rgb(0, 255, 12);;
+}
+
+/*Derecha-----------------------------------------------------------------------------------------------------------------*/
+
+.right {
+    height: 100%;
+    width: 70%;
+    display: inline-flexbox;
+}
+
+.popular{
+    width: 80%;
+    height: 30rem;
+    border: 4px rgb(0, 255, 12) solid;
+    border-radius: 16%;
+    margin: auto;
+    margin-top: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popular:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 12px rgb(0, 255, 12);;
+}
+
+
+.coments{
+    width: 100%;
+    height: 20rem;
+    margin: auto;
+    margin-top: 1rem;  
+    display: flex;
+}
+
+.coment{
+    width: 75%;
+    height: 18rem;
+    border: 4px rgb(0, 255, 12) solid;
+    border-radius: 16%;
+    display:inline-block;
+    margin: 1rem;
+    margin-bottom: 0rem;
+    margin-left: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.coment:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 12px rgb(0, 255, 12);;
+}
