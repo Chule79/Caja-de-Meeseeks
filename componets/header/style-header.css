@@ -1,12 +1,11 @@
 header {
     display: flex;
-    height: 13vh;
+    height: auto;
     width: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 4rem;
     background-color: rgba(0, 0, 0, 0.6);
-    
 }
 
 h1{
@@ -20,4 +19,9 @@ h1{
 .icon {
     width: 5rem;  
     padding-top: 1rem;  
+    transition: all 0.5s;
+}
+
+.icon:hover{
+    width: 6rem; 
 }

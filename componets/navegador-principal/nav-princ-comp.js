@@ -1,5 +1,5 @@
 import './style-nav-princ.css';
-export const navPrincipal = () =>{
+export const navPrincipal = 
     `<nav>
         <ul>
             <li>
@@ -13,5 +13,4 @@ export const navPrincipal = () =>{
             </li>
         </ul>
     </nav>`
-}
-navPrincipal()
+

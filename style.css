@@ -12,52 +12,28 @@
 
 body {
     background-image: url(assets/Inicio_bg.jpg);
-    background-size: cover;
+    background-size:100%;
     background-repeat: no-repeat;
     font-family: Schwifty Font ;
+    color:rgb(0, 89, 255);
+    text-align: center;
+    text-decoration: none;
+    -webkit-text-stroke: 0.01px rgb(0, 255, 12); 
+    
 }
-
-/*Navegador etc-----------------------------------------------------------------------------------------------------------------*/
-
 
 /*Caja de contenido-----------------------------------------------------------------------------------------------------------------*/
 
 .conten{
     display:flex;
-    flex-wrap: wrap;
-}
-
-/*Izquierda-----------------------------------------------------------------------------------------------------------------*/
-
-.left {
-    height: 100%;
-    width: 30%;
-    flex-wrap: wrap;
-}
-
-.news{
-    width: 75%;
-    height: 16rem;
-    border: 4px rgb(0, 255, 12) solid;
-    border-radius: 16%;
-    display:inline-block;
-    margin: 1rem;
-    margin-bottom: 0rem;
-    margin-left: 5rem;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.news:hover{
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 12px rgb(0, 255, 12);;
 }
 
 /*Derecha-----------------------------------------------------------------------------------------------------------------*/
 
 .right {
-    height: 100%;
     width: 70%;
     flex-wrap: wrap;
+    min-width: 400px;
 }
 
 .popular{
@@ -98,4 +74,17 @@ body {
 .coment:hover{
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 12px rgb(0, 255, 12);;
+}
+
+
+
+
+
+.leftgroup {
+    width: 30%;
+    flex-wrap: wrap;
+    height: 100vh;
+    min-width: 400px;
+    overflow:scroll;
+    gap: 1rem;
 }
