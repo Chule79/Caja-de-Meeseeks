@@ -1,5 +1,5 @@
 import './style-noticias.css';
-const left = document.querySelector("#leftgroup")
+const left = document.querySelector("#ultimasNoticias")
 
 
 
@@ -25,6 +25,7 @@ const getNews = async () => {
         description: noticia.description,
         imagen: noticia.urlToImage,
       }
+      
     })
     // Llammos a la función de pintado -> template 
     fillNews(elementsTransformed);
@@ -35,7 +36,8 @@ const getNews = async () => {
   const fillNews = (news) => { 
     news.forEach((noticia) =>{
          // Recogemos en una variable los elementos
-      const leftNews = `
+         
+      const ultimaNoticias = `
             <div class="news">
                 <h2>${noticia.newsTitle}</h2>
                 <img src="${noticia.imagen}"></img>
@@ -43,6 +45,6 @@ const getNews = async () => {
             </div>
       `
       // Los añadimos en el contenedor -> ul
-      left.innerHTML += leftNews;
+      left.innerHTML += ultimaNoticias; console.log(ultimaNoticias);
     })};
-  
+ 

@@ -1,8 +1,44 @@
 
+header {
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    padding-left: 5rem;
+}
+
+h1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4.3rem;
+    color:rgb(0, 89, 255);
+    -webkit-text-stroke: 0.01px rgb(0, 255, 12);
+    text-shadow: 0 0 9px rgb(0, 255, 12);
+    padding-top: 1rem;
+}
+
+.icon {
+    width: 5rem;  
+    padding-top: 1rem;  
+    transition: all 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon:hover{
+    width: 6rem; 
+}
+
 ul {
     list-style-type:none;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 2%;
+    text-align: center;
+    gap: 3rem;
 }
 
 li {
@@ -26,3 +62,86 @@ li a:hover{
     text-shadow: 0 0 7px rgb(0, 255, 12);
     color:blue; 
 }
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem; 
+}
+
+
+    
+input {
+display: none;
+}
+
+
+
+/*-------------------------------------------------Pantalla-Pequeña-----------------------------------------------------*/
+
+
+@media screen and (max-width: 1000px){ 
+    
+    header{
+        padding: 0%;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+    
+    ul{
+    display: none;
+    }
+    
+    input:checked  ~ ul{
+    display:flex;
+    }
+    
+    input {
+    display: none;
+    }
+    
+    label {
+    display: inline-block;
+    border-radius: 5px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    }
+    
+    
+    li {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+    }
+    
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    li:hover {
+    filter: brightness(110%);
+    }
+
+    li a {
+        display: flex;
+        color:rgb(0, 89, 255);
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        -webkit-text-stroke: 0.01px rgb(0, 255, 12);  
+        transition: all 0.5s;
+    }
+
+    li a:hover{
+        font-size: 1.5rem;
+        text-shadow: 0 0 7px rgb(0, 255, 12);
+        color:blue; 
+    }
+}
+
+

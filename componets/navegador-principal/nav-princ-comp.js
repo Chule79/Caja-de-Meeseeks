@@ -1,7 +1,13 @@
 import './style-nav-princ.css';
 export const navPrincipal = 
-    `<nav>
-        <ul>
+ 
+    `<nav> 
+        <input type="checkbox" id="menu">
+        <label for="menu">  
+            <img src="../../assets/Icon_page.png" class="icon">  
+        </label>
+        <ul id='navi' class='navi'>
+        
             <li>
                 <a href="/">Inicio</a>  
             </li>
@@ -12,5 +18,6 @@ export const navPrincipal =
                 <a href="/html/sing_in.html">Iniciar Sesion</a>
             </li>
         </ul>
-    </nav>`
-
+        <h1>Rick y Morty</h1>
+     </nav>
+     `
