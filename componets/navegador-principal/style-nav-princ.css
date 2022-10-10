@@ -4,9 +4,9 @@ header {
     height: auto;
     width: 100%;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 1rem;
     background-color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-left: 5rem;
 }
 
@@ -26,6 +26,7 @@ h1{
     transition: all 0.5s;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .icon:hover{
@@ -38,7 +39,7 @@ ul {
     flex-wrap: wrap;
     margin-top: 2%;
     text-align: center;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 li {
@@ -58,7 +59,7 @@ li a {
 }
 
 li a:hover{
-    font-size: 2.5rem;
+    scale: 1.2;
     text-shadow: 0 0 7px rgb(0, 255, 12);
     color:blue; 
 }
@@ -83,13 +84,16 @@ display: none;
 @media screen and (max-width: 1000px){ 
     
     header{
-        padding: 0%;
+        padding: 0%; 
+        align-items: center;
+        padding: 0rem 0.5rem;
     }
 
     nav{
         display: flex;
         flex-wrap: wrap;
         gap: 5rem;
+        align-items: center;   
     }
     
     ul{
@@ -98,6 +102,7 @@ display: none;
     
     input:checked  ~ ul{
     display:flex;
+    flex-wrap: wrap;
     }
     
     input {
@@ -105,26 +110,26 @@ display: none;
     }
     
     label {
-    display: inline-block;
-    border-radius: 5px;
-    width: 30px;
-    line-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    width: 65px;
     text-align: center;
+    align-items: center;
     }
     
     
     li {
     display: flex;
     margin: 0;
-    padding: 10px;
+    padding: 1px;
     list-style: none;
     border-bottom: 1px solid grey;
+    gap: 0;
     }
     
     /*Estilo cuando el mouse pasa encima de cada link del menu*/
-    li:hover {
-    filter: brightness(110%);
-    }
+  
 
     li a {
         display: flex;
@@ -138,9 +143,25 @@ display: none;
     }
 
     li a:hover{
-        font-size: 1.5rem;
+        scale: (1.2);
         text-shadow: 0 0 7px rgb(0, 255, 12);
         color:blue; 
+    }
+
+    .icon {
+        width: 4rem;  
+        
+    }
+
+    .icon:hover{
+        width: 4.5rem; 
+    }
+
+    h1{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 3.3rem;
+        
     }
 }
 

@@ -1,25 +1,18 @@
 import './style-noticias.css';
+import {getNews} from '../../apis/apis.js';
+
+export const fetchData = async () => {
+
+  const data = await getNews()  
+  tranformNews(data)
+  
+}
+
+
 const left = document.querySelector("#ultimasNoticias")
-
-
-
-export const initNews = () => {
-    getNews();
-  }
-
-const getNews = async () => {
-    
-    try {
-      const responseNews = await fetch('https://newsapi.org/v2/everything?q=serie-rick-morty&apiKey=64914d1e897643de882139d4cc51cb8f');
-      const responseNewsToJson = await responseNews.json();
-      tranformNews(responseNewsToJson);
-    } catch (error) {
-      console.log(error)
-    }
-  }
  
-  const tranformNews = (news) => {
-    let elementsTransformed = news.articles.map((noticia) => {
+  const tranformNews = async (data) => {
+    let elementsTransformed = data.articles.map((noticia) => {
       return {
         newsTitle: noticia.title,
         description: noticia.description,
@@ -33,8 +26,8 @@ const getNews = async () => {
   }
 
 
-  const fillNews = (news) => { 
-    news.forEach((noticia) =>{
+  const fillNews = (data) => { 
+    data.forEach((noticia) =>{
          // Recogemos en una variable los elementos
          
       const ultimaNoticias = `
@@ -45,6 +38,7 @@ const getNews = async () => {
             </div>
       `
       // Los añadimos en el contenedor -> ul
-      left.innerHTML += ultimaNoticias; console.log(ultimaNoticias);
+      left.innerHTML += ultimaNoticias; 
     })};
  
+  
